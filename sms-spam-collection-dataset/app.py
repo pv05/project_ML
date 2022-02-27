@@ -8,7 +8,7 @@ from nltk.stem.porter import PorterStemmer
 #tfidf = pickle.load(open('vectorizer.pkl','rb'))
 #model = pickle.load(open('model.pkl','rb'))
 
-path =https://github.com/pv05/project_ML/blob/main/sms-spam-collection-dataset
+path ="https://github.com/pv05/project_ML/blob/main/sms-spam-collection-dataset"
 tfidf = pickle.load(open(r'{path}/vectorizer.pkl','rb'))
 model = pickle.load(open(r'{path}/model.pkl','rb'))
 
