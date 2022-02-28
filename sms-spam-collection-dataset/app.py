@@ -4,13 +4,20 @@ import nltk
 from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
+from urllib.request import urlopen
 
 def main():
     # tfidf = pickle.load(urllib.request.urlopen('https:///raw.githubusercontent.com/pv05/project_ML/tree/main/sms-spam-collection-dataset/vectorizer.pkl'))
     # model = pickle.load(urllib.request.urlopen('https:///raw.githubusercontent.com/pv05/project_ML/tree/main/sms-spam-collection-dataset/model.pkl'))
 
-    tfidf = pickle.load(open("pklfile/_vectorizer.pkl","rb"))
-    model = pickle.load(open("pklfile/_vectorizer.pkl","rb"))
+    # tfidf = pickle.load(open("pklfile/_vectorizer/%s.pkl","rb"))
+    # model = pickle.load(open("pklfile/_vectorizer/%s.pkl","rb"))
+
+    with urlopen( 'https://drive.google.com/file/d/12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7/view?usp=sharing') as file1:
+        tfidf = file1.read()
+
+    with urlopen( 'https://drive.google.com/file/d/1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x/view?usp=sharing' ) as file2:
+        model = file2.read()
 
     def transform_text(text):
         #Lower case
