@@ -4,9 +4,18 @@ import nltk
 from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
+import urllib.request
 
-tfidf = pickle.load(open('vectorizer.pkl','rb'))
-model = pickle.load(open('model.pkl','rb'))
+
+# tfidf = pickle.load(urllib.request.urlopen('https:///raw.githubusercontent.com/pv05/project_ML/tree/main/sms-spam-collection-dataset/vectorizer.pkl'))
+# model = pickle.load(urllib.request.urlopen('https:///raw.githubusercontent.com/pv05/project_ML/tree/main/sms-spam-collection-dataset/model.pkl'))
+
+
+with open('vectorizer.pkl', 'rb') as f:
+    tfidf = pickle.load(f)
+
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(f)
 
 #tfidf = pickle.load(open('/app/project_ml/sms-spam-collection-dataset/vectorizer.pkl','rb'))
 #model = pickle.load(open('/app/project_ml/sms-spam-collection-dataset/model.pkl','rb'))
