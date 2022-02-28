@@ -4,18 +4,18 @@ import nltk
 from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
-from urllib.request import urlopen
+import urllib.request
 
 
-# tfidf = pickle.load(urllib.request.urlopen('https:///raw.githubusercontent.com/pv05/project_ML/tree/main/sms-spam-collection-dataset/vectorizer.pkl'))
-# model = pickle.load(urllib.request.urlopen('https:///raw.githubusercontent.com/pv05/project_ML/tree/main/sms-spam-collection-dataset/model.pkl'))
+tfidf = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7'))
+model = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x'))
 
 
-with urlopen( 'https://drive.google.com/file/d/12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7/view?usp=sharing') as file1:
-    tfidf = file1.read()
+# with urlopen( 'https://drive.google.com/file/d/12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7/view?usp=sharing') as file1:
+#     tfidf = file1.read()
 
-with urlopen( 'https://drive.google.com/file/d/1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x/view?usp=sharing' ) as file2:
-    model = file2.read()
+# with urlopen( 'https://drive.google.com/file/d/1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x/view?usp=sharing' ) as file2:
+#     model = file2.read()
 
 def transform_text(text):
     #Lower case
