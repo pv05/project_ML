@@ -5,7 +5,8 @@ from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
 import urllib.request
-
+nltk.download('wordnet')
+nltk.download('punkt')
 
 tfidf = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7'))
 model = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x'))
