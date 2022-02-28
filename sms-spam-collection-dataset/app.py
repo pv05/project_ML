@@ -5,11 +5,11 @@ from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
 
-#tfidf = pickle.load(open('vectorizer.pkl','rb'))
-#model = pickle.load(open('model.pkl','rb'))
+tfidf = pickle.load(open('vectorizer.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 
-tfidf = pickle.load(open('/app/project_ml/sms-spam-collection-dataset/vectorizer.pkl','rb'))
-model = pickle.load(open('/app/project_ml/sms-spam-collection-dataset/model.pkl','rb'))
+#tfidf = pickle.load(open('/app/project_ml/sms-spam-collection-dataset/vectorizer.pkl','rb'))
+#model = pickle.load(open('/app/project_ml/sms-spam-collection-dataset/model.pkl','rb'))
 
 
 
