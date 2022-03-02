@@ -5,17 +5,10 @@ from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
 import urllib.request
-nltk.download('all')
+#nltk.download('all') # uncomment when, ntlk not downloaded on your system
 
 tfidf = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7'))
 model = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x'))
-
-
-# with urlopen( 'https://drive.google.com/file/d/12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7/view?usp=sharing') as file1:
-#     tfidf = file1.read()
-
-# with urlopen( 'https://drive.google.com/file/d/1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x/view?usp=sharing' ) as file2:
-#     model = file2.read()
 
 def transform_text(text):
     #Lower case
