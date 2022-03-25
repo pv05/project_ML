@@ -7,8 +7,14 @@ from nltk.stem.porter import PorterStemmer
 import urllib.request
 #nltk.download('all') # uncomment when, ntlk not downloaded on your system
 
-tfidf = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7'))
-model = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x'))
+#tfidf = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7'))
+#model = pickle.load(urllib.request.urlopen('https://drive.google.com/uc?export=download&id=1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x'))
+
+
+tfidf = pickle.load(urllib.request.urlopen('https://www.googleapis.com/drive/v3/files/12Xg7xNbR9jpLFJetr0aC8o1JVOg735L7?alt=media&key=AIzaSyCUpIPtvM6lJw65WnZoM-Xxn7Xo6xytJ3k'))
+model = pickle.load(urllib.request.urlopen('https://www.googleapis.com/drive/v3/files/1wgZVx-eYLALXpg4ijq9h7kqN3Ipip--x?alt=media&key=AIzaSyCUpIPtvM6lJw65WnZoM-Xxn7Xo6xytJ3k'))
+
+
 
 def transform_text(text):
     #Lower case
