@@ -49,11 +49,11 @@ def transform_text(text):
     return " ".join(y)
 
 
-
-st.title('SMS Spam Classifer')
+github_repo_link = "https://github.com/pv05/project_ML/tree/main/sms-spam-collection-dataset"
+fulllink = f'[![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)]({github_repo_link})'
+st.title(f'SMS Spam Classifer {fulllink}')
 
 input_sms = st.text_area('Enter the SMS')
-
 
 if st.button('predict'):
     if len(input_sms.strip()) != 0: 
