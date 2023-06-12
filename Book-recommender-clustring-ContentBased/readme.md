@@ -23,4 +23,4 @@ The KNN algorithm is applied to build the recommendation system. The algorithm w
 Once the model is built, it is saved in pickle format. A Streamlit website is then created where users can enter the name of a book, and the model will recommend five similar books. The website is hosted for free and can be accessed by anyone.
  
 ### Visit website :
-[http://bookrecommad.streamlit.app](https://bookrecommand.streamlit.app)
+[http://bookrecommad.streamlit.app](https://bookrecommad.streamlit.app)
