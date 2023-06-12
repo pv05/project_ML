@@ -20,8 +20,8 @@ For this project, we used a Logistic Regression algorithm to build the machine l
 ### Model Deployment :
 We deployed the trained model on a Streamlit website, which allows users to enter the 2nd inning batting team , bowling team , match scores , over completed, city,target of match, wicket and predict the win probability of the 2nd innings team. The website is hosted for free, and anyone.
 
-### Visit website :
-[https://iplwin.streamlit.app](https://iplwin.streamlit.app/)
-
 ### Conclusion :
 The IPL Win Predictor project aims to predict the win probability of the 2nd innings team in the game of cricket using machine learning algorithms. We used data from previous IPL seasons to build a Logistic Regression model and achieved an accuracy of 80%. The model is deployed on a Streamlit website, which is hosted for free, and anyone can access it to predict the outcome of future IPL matches.
+
+### Visit website :
+[https://iplwin.streamlit.app](https://iplwin.streamlit.app/)
